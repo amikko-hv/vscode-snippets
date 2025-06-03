@@ -1,0 +1,57 @@
+{
+	"Markdown Presentation Template": {
+		"prefix": "md-presentation",
+		"body": [
+			"---",
+			"title: ${1: Title}",
+			"subtitle: ${2: Subtitle}",
+			"author: ${3: Andreas Mikko}",
+			"",
+			"bibliography: ${4:[../../../refs.bib]}",
+			"---",
+			"",
+			"# Summary",
+			"",
+			"- $0",
+			"",
+			"# References",
+			"",
+			"::: {#refs}",
+			":::",
+			""
+		],
+		"description": "Markdown template for powerpoint presentations"
+	},
+	"CSharp Code Block": {
+		"prefix": "md-csharp",
+		"body": [
+			"```csharp",
+			"$0",
+			"```"
+		],
+		"description": "Markdown code block for C#"
+	},
+	"Presentation Notes": {
+		"prefix": "md-notes",
+		"body": [
+			"::: notes",
+			"$0",
+			":::"
+		],
+		"description": "Markdown for presentation slide notes"
+	},
+	"Image": {
+		"prefix": "md-image",
+		"body": [
+			"![${1: alt-text}](images/${2: path})"
+		],
+		"description": "Markdown for inserting an image"
+	},
+	"URL": {
+		"prefix": "md-url",
+		"body": [
+			"![${1: alt-text}](${2: url})"
+		],
+		"description": "Markdown for inserting a URL"
+	}
+}
