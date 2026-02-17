@@ -22,10 +22,28 @@
 		],
 		"description": "Markdown template for powerpoint presentations"
 	},
+	"Code Block": {
+		"prefix": "md-code",
+		"body": [
+			"```${1:lang}",
+			"$0",
+			"```"
+		],
+		"description": "Markdown code block"
+	},
 	"CSharp Code Block": {
 		"prefix": "md-csharp",
 		"body": [
 			"```csharp",
+			"$0",
+			"```"
+		],
+		"description": "Markdown code block for C#"
+	},
+	"JS Code Block": {
+		"prefix": "md-js",
+		"body": [
+			"```js",
 			"$0",
 			"```"
 		],
@@ -43,15 +61,30 @@
 	"Image": {
 		"prefix": "md-image",
 		"body": [
-			"![${1: alt-text}](images/${2: path})"
+			"![${1:alt-text}](images/${2:path})"
 		],
 		"description": "Markdown for inserting an image"
 	},
 	"URL": {
 		"prefix": "md-url",
 		"body": [
-			"![${1: alt-text}](${2: url})"
+			"[${1:alt-text}](${2:url})"
 		],
 		"description": "Markdown for inserting a URL"
+	},
+	"Columns": {
+		"prefix": "md-columns",
+		"body": [
+			":::{.columns}",
+			":::{.column width=\"50%\"}",
+			"Text 1",
+			":::",
+			"",
+			":::{.column width=\"50%\"}",
+			"Text 2",
+			":::",
+			":::"
+		],
+		"description": "Markdown for creating a slide with two columns"
 	}
 }
